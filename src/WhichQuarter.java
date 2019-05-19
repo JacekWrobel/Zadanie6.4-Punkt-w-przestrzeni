@@ -8,15 +8,8 @@ public class WhichQuarter {
         System.out.println("Podaj współrzedną Y");
         double y = scanner.nextDouble();
         Method method = new Method();
-        String quarter = method.quarter(x, y);
-        System.out.println("Punkt (" +x +", " +y + ") leży w" +quarter +"ćwiartce układu współrzędnych.");
-/*
-        String quarter2 = method.witchQuatrer(x, y);
-        System.out.println("Punkt (" +x +", " +y + ") leży w" +quarter2 +"ćwiartce układu współrzędnych.");
-
-        String quarter3 = method.noQuaater(x, y);
-        System.out.println("Punkt nie leży w ćwiartce, ale na " +quarter3);
- */
+        String result = method.quarter(x, y);
+        System.out.println("Punkt (" + x + ", " + y + ") leży w ćwiartce " + result);
     }
 }
 
